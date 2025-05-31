@@ -11,7 +11,7 @@ public class Solution {
         {return res;}
         if((dividend1<0&&divisor1<0) ||(dividend1>0&&divisor1>0))
         {
-            for(int n=1000;n>0;n--){
+            for(int n=2000;n>0;n--){
             while(Math.Abs(dividend1)>=n*Math.Abs(divisor1))
             {
                 dividend1=Math.Abs(dividend1)-n*Math.Abs(divisor1);
@@ -24,7 +24,7 @@ public class Solution {
         }
         else {//if((dividend<0&&divisor>0) ||(dividend>0&&divisor<0)){
             //try{
-            for(int n=1000;n>0;n--){
+            for(int n=2000;n>0;n--){
             while(Math.Abs(dividend1)>=n*Math.Abs(divisor1))
             {
                 dividend1=Math.Abs(dividend1)-n*Math.Abs(divisor1);
