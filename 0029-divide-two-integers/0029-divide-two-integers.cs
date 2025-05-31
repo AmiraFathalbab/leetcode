@@ -7,6 +7,8 @@ public class Solution {
         {return 2147483647;}
         if(divisor1==1)
         {return dividend;}
+        if(divisor1==-1)
+        {return dividend*-1;}
         if(Math.Abs(dividend1)<Math.Abs(divisor1))
         {return res;}
         if((dividend1<0&&divisor1<0) ||(dividend1>0&&divisor1>0))
@@ -22,8 +24,7 @@ public class Solution {
             return res;
 
         }
-        else {//if((dividend<0&&divisor>0) ||(dividend>0&&divisor<0)){
-            //try{
+        else {
             for(int n=2000;n>0;n--){
             while(Math.Abs(dividend1)>=n*Math.Abs(divisor1))
             {
@@ -35,9 +36,7 @@ public class Solution {
            
             return res;
         }
-        // else
-        //     return res;
-
+         
         
         
     }
