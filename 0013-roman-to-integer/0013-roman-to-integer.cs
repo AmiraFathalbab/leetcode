@@ -4,7 +4,7 @@ public class Solution {
         //string[] r=["I","V","X","L","C","D","M"];
         for(int i=0;i<s.Length;i++)
         {
-            if(string.Equals(s[i], 'I'))
+            if(s[i]== 'I')
             {
                 if(i!=s.Length-1&&s[i+1]== 'V')
                 {   
