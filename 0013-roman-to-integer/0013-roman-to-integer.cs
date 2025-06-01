@@ -49,14 +49,14 @@ public class Solution {
                 res+=50;
             }
             
-           else if(string.Equals(s[i], 'C'))
+           else if(s[i]== 'C')
             {
-                if(i!=s.Length-1&&string.Equals(s[i+1], 'D'))
+                if(i!=s.Length-1&&s[i+1]== 'D')
                 {
                     res+=400;
                     i+=1;
                 }
-                else if(i!=s.Length-1&&string.Equals(s[i+1], 'M'))
+                else if(i!=s.Length-1&&s[i+1]== 'M')
                 {
                     res+=900;
                     i+=1;
