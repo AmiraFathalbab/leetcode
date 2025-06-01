@@ -4,20 +4,24 @@ public class Solution {
         //string[] r=["I","V","X","L","C","D","M"];
         for(int i=0;i<s.Length;i++)
         {
-            if(string.Equals(s[i], 'I')&&i!=s.Length-1&&string.Equals(s[i+1], 'V'))
+            if(string.Equals(s[i], 'I'))
             {
-                res+=4;
-                i+=1;
+                if(i!=s.Length-1&&string.Equals(s[i+1], 'V'))
+                {   
+                    res+=4;
+                    i+=1;
+                }
+                else if(i!=s.Length-1&&string.Equals(s[i+1], 'X'))
+                {   
+                    res+=9;
+                    i+=1;
+                }
+                else
+                    res+=1;
+                
             }
-            else if(string.Equals(s[i], 'I')&&i!=s.Length-1&&string.Equals(s[i+1], 'X'))
-            {
-                res+=9;
-                i+=1;
-            }
-            else if(string.Equals(s[i], 'I'))
-            {
-                res+=1;
-            }
+            
+            
             else if(string.Equals(s[i], 'V'))
             {
                 res+=5;
