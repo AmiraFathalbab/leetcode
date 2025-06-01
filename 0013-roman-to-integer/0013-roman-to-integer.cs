@@ -6,12 +6,12 @@ public class Solution {
         {
             if(string.Equals(s[i], 'I'))
             {
-                if(i!=s.Length-1&&string.Equals(s[i+1], 'V'))
+                if(i!=s.Length-1&&s[i+1]== 'V')
                 {   
                     res+=4;
                     i+=1;
                 }
-                else if(i!=s.Length-1&&string.Equals(s[i+1], 'X'))
+                else if(i!=s.Length-1&&s[i+1]== 'X')
                 {   
                     res+=9;
                     i+=1;
@@ -22,20 +22,20 @@ public class Solution {
             }
             
             
-            else if(string.Equals(s[i], 'V'))
+            else if(s[i]== 'V')
             {
                 res+=5;
             }
 
             
-            else if(string.Equals(s[i], 'X'))
+            else if(s[i]== 'X')
             {
-                if(i!=s.Length-1&&string.Equals(s[i+1], 'L'))
+                if(i!=s.Length-1&&s[i+1]== 'L')
                 {
                     res+=40;
                     i+=1;
                 }
-                else if(i!=s.Length-1&&string.Equals(s[i+1], 'C'))
+                else if(i!=s.Length-1&&s[i+1]== 'C')
                 {
                     res+=90;
                     i+=1;
@@ -44,7 +44,7 @@ public class Solution {
                     res+=10;
             }
             
-            else if(string.Equals(s[i], 'L'))
+            else if(s[i]== 'L')
             {
                 res+=50;
             }
