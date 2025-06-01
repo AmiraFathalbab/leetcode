@@ -28,40 +28,44 @@ public class Solution {
             }
 
             
-            else if(string.Equals(s[i], 'X')&&i!=s.Length-1&&string.Equals(s[i+1], 'L'))
-            {
-                res+=40;
-                i+=1;
-            }
-            else if(string.Equals(s[i], 'X')&&i!=s.Length-1&&string.Equals(s[i+1], 'C'))
-            {
-                res+=90;
-                i+=1;
-            }
-
             else if(string.Equals(s[i], 'X'))
             {
-                res+=10;
+                if(i!=s.Length-1&&string.Equals(s[i+1], 'L'))
+                {
+                    res+=40;
+                    i+=1;
+                }
+                else if(i!=s.Length-1&&string.Equals(s[i+1], 'C'))
+                {
+                    res+=90;
+                    i+=1;
+                }
+                else
+                    res+=10;
             }
+            
             else if(string.Equals(s[i], 'L'))
             {
                 res+=50;
             }
             
-           else if(string.Equals(s[i], 'C')&&i!=s.Length-1&&string.Equals(s[i+1], 'D'))
+           else if(string.Equals(s[i], 'C'))
             {
-                res+=400;
-                i+=1;
+                if(i!=s.Length-1&&string.Equals(s[i+1], 'D'))
+                {
+                    res+=400;
+                    i+=1;
+                }
+                else if(i!=s.Length-1&&string.Equals(s[i+1], 'M'))
+                {
+                    res+=900;
+                    i+=1;
+                }
+                else
+                    res+=100;
+                
             }
-            else if(string.Equals(s[i], 'C')&&i!=s.Length-1&&string.Equals(s[i+1], 'M'))
-            {
-                res+=900;
-                i+=1;
-            }
-            else if(string.Equals(s[i], 'C'))
-            {
-                res+=100;
-            }
+            
             else if(string.Equals(s[i], 'D'))
             {
                 res+=500;
