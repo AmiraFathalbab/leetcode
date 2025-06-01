@@ -85,7 +85,7 @@ public class Solution {
             }
         }
             
-Console.WriteLine(i);
+
         }
         
         return res;
