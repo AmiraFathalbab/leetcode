@@ -70,7 +70,7 @@ public class Solution {
             {
                 res+=500;
             }
-            else if(string.Equals(s[i], 'M'))
+            else if(s[i]== 'M')
             {
                 res+=1000;
             }
