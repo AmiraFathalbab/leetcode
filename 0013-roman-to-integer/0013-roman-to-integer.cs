@@ -66,7 +66,7 @@ public class Solution {
                 
             }
             
-            else if(string.Equals(s[i], 'D'))
+            else if(s[i]== 'D')
             {
                 res+=500;
             }
