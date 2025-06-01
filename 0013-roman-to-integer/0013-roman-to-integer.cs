@@ -4,7 +4,9 @@ public class Solution {
         //string[] r=["I","V","X","L","C","D","M"];
         for(int i=0;i<s.Length;i++)
         {
-            if(s[i]== 'I')
+            switch(s[i])
+            {
+            case 'I':
             {
                 if(i!=s.Length-1&&s[i+1]== 'V')
                 {   
@@ -18,17 +20,19 @@ public class Solution {
                 }
                 else
                     res+=1;
+                break;
                 
             }
             
             
-            else if(s[i]== 'V')
+            case 'V':
             {
                 res+=5;
+                break;
             }
 
             
-            else if(s[i]== 'X')
+            case 'X':
             {
                 if(i!=s.Length-1&&s[i+1]== 'L')
                 {
@@ -42,14 +46,16 @@ public class Solution {
                 }
                 else
                     res+=10;
+                break;
             }
             
-            else if(s[i]== 'L')
+            case 'L':
             {
                 res+=50;
+                break;
             }
             
-           else if(s[i]== 'C')
+           case  'C':
             {
                 if(i!=s.Length-1&&s[i+1]== 'D')
                 {
@@ -63,18 +69,21 @@ public class Solution {
                 }
                 else
                     res+=100;
+                break;
                 
             }
             
-            else if(s[i]== 'D')
+            case 'D':
             {
                 res+=500;
+                break;
             }
-            else if(s[i]== 'M')
+            case 'M':
             {
                 res+=1000;
+                break;
             }
-
+        }
             
 Console.WriteLine(i);
         }
