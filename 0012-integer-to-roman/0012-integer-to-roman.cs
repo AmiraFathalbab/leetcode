@@ -16,7 +16,7 @@ public class Solution {
 
         for(int i=0;i<s.Length;i++)
         {
-            
+            //s[i]*=Math.pow(10,count-1);
             
             if(s[i]<'4')
             {
