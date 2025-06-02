@@ -16,15 +16,14 @@ public class Solution {
 
         for(int i=0;i<s.Length;i++)
         {
-            //s[i]*=Math.pow(10,count-1);
+            
             
             if(s[i]<'4')
             {
-                foreach(var m in s)
-                    Console.WriteLine(m);
-                for(int j=0;j<s[i]- '0';j++){
+                
+                for(int j=0;j<s[i]- '0';j++)
                     res+=(roman[(int)Math.Pow(10,count-1)]);
-                    Console.WriteLine(roman[1]);}
+                    
             }
             else if(s[i]=='4')
             {
